@@ -1,0 +1,17 @@
+model_list:
+  - model_name: agent-main
+    litellm_params:
+      model: openai/gemini-2.5-flash
+      api_base: os.environ/GEMINI_WEB2API_BASE_URL
+      api_key: os.environ/GEMINI_WEB2API_API_KEY
+  - model_name: agent-worker
+    litellm_params:
+      model: openai/gemini-2.5-flash
+      api_base: os.environ/GEMINI_WEB2API_BASE_URL
+      api_key: os.environ/GEMINI_WEB2API_API_KEY
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+litellm_settings:
+  turn_off_message_logging: true
